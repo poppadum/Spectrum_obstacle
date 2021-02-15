@@ -39,11 +39,11 @@ Increase or decrease the number of obstacles by adjusting the value `50` in the 
  100 PAUSE 1: GO TO 70
 ```
 
-Lines 10-30: initialise the random number seed, clear the screen and set the colours to black ink on white background. Print a black box around the edge of the screen.
-Line 40: print the start marker `>` at the middle of the left edge; mark the 'goal' by printing a space at a random place on the right edge of the screen.
-Line 50: draw 50 obstacle blocks at random points on the screen.
-Line 60: `x` and `y` hold the coordinates for the next point on the player's line; start just to the right of the start marker. Play a short sound to indicate to the player the game is about to start.
-Line 70: draw a single pixel at the line's current coordinates. Increase `x` to move the next point to the right. Increase `y` by one to move the next point down; if SPACE is pressed, subtract 2 to cancel the move down and move the next point up.
-Line 80: if the line's next point is already occupied, we've crashed: inform the player and stop the game.
-Line 90: if the line has reached the right side of the screen, we've won: inform the player and stop the game.
-Line 100: pause 1/50s (so the game runs at a playable speed); go back to line 70 to draw the next point on the line.
+- Lines 10-30: initialise the random number seed, clear the screen and set the colours to black ink on white background. Print a black box around the edge of the screen.
+- Line 40: print the start marker `>` at the middle of the left edge; mark the 'goal' by printing a space at a random place on the right edge of the screen.
+- Line 50: draw 50 obstacle blocks at random points on the screen.
+- Line 60: `x` and `y` hold the coordinates for the next point on the player's line; start just to the right of the start marker. Play a short sound to indicate to the player the game is about to start.
+- Line 70: draw a single pixel at the line's current coordinates. Increase `x` to move the next point to the right. Increase `y` by one to move the next point down; if SPACE is pressed, subtract 2 to cancel the move down and move the next point up.
+- Line 80: if the line's next point is already occupied, we've crashed: inform the player and stop the game.
+- Line 90: if the line has reached the right side of the screen, we've won: inform the player and stop the game.
+- Line 100: pause 1/50s (so the game runs at a playable speed); go back to line 70 to draw the next point on the line.
